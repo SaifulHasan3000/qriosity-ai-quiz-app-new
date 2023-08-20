@@ -1,0 +1,172 @@
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  #quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #topic-input,
+  #quiz {
+    margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .option {
+    margin: 5px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #result {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  #next,
+  #submit,
+  #restart {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  #next:hover,
+  #submit:hover,
+  #restart:hover {
+    background-color: #c1127b;
+  }
+  
+  /* Style for topic input field */
+  #topic {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Style for number of questions input field */
+  #numQuestions {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Style for start button */
+  #start {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  #start:hover {
+    background-color: #c1127b;
+  }
+  
+  /* Style for eliminated options */
+  .option.eliminated-option {
+    background-color: #ccc;
+    color: #000;
+    cursor: not-allowed;
+  }
+  
+  /* Style for lifeline button */
+  #lifeline,
+  #audiencePoll {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    margin-left: 109px;
+  }
+  
+  #lifeline:hover,
+  #audiencePoll:hover {
+    background-color: #c1127b;
+  }
+  
+  #lifeline.eliminated-option,
+  #audiencePoll.eliminated-option {
+    background-color: #ccc;
+    color: #000;
+    cursor: not-allowed;
+  }
+
+  /* Style for lifeline buttons container */
+  #lifelineButtons {
+  display: flex;
+  justify-content: center;
+  }
+  
+  /* Style for audience poll results */
+  #audiencePollResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #pollChart {
+    width: 300px;
+    height: 200px;
+  }
